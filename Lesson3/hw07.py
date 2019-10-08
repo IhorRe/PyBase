@@ -10,6 +10,6 @@ def area(figure, data):
     return ' Площадь {} = {} '.format(figure, s)
 
 
-figure = input('Фигура желаемая для расчёта площади =  ')
+figure = input('Фигура желаемая для расчёта площади(круг, прямоугольник, треугольник) =  ')
 data = [float(i) for i in input('Введите данные для расчёта пробел = ').rsplit()]
 print(area(figure, data))
