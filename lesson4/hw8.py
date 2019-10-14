@@ -20,12 +20,15 @@ def text_stat(text):
     print("<-----Статистика символов")
     print("*"*50)
     print("статистика слов ---->")
-    words1 = q
+    words1=q
     words1 = words1.split()
     words2 = sorted(words1)
+    m=[]
     for i in words2:
-        if i not in l and i.isascii() or i.isalpha():
+        if i not in m:
+            m.append(i)
             print("'"+i+"'" + ': ' + str(words2.count(i)))
+
     print('<----- статистика слов')
 
 print('текст для экспериментов:  ')
