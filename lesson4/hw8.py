@@ -5,7 +5,7 @@ def count1(text):
         for i in s:
             if i in '0123456789':
                 count1 += 1
-        return 'В тексте {} цыфр'.format(count1)
+        return 'В тексте {} цифр'.format(count1)
 
 def text_stat(text):
     q=text.lower()
