@@ -8,7 +8,8 @@ def count1(text):
         return 'В тексте {} цыфр'.format(count1)
 
 def text_stat(text):
-    z = text.lower( )
+    q=text.lower()
+    z = sorted(q)
     print("статистика символов ----->")
     l = []
     s = ''.join(list(z))
@@ -19,11 +20,12 @@ def text_stat(text):
     print("<-----Статистика символов")
     print("*"*50)
     print("статистика слов ---->")
-    words1 = z
+    words1 = q
     words1 = words1.split()
-    for i in words1:
+    words2 = sorted(words1)
+    for i in words2:
         if i not in l and i.isascii() or i.isalpha():
-            print("'"+i+"'" + ': ' + str(words1.count(i)))
+            print("'"+i+"'" + ': ' + str(words2.count(i)))
     print('<----- статистика слов')
 
 print('текст для экспериментов:  ')
